@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ranna"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_20dp"/>
+        <TextView
+            android:id="@+id/abo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:text="About us"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abo"
+            android:justificationMode="inter_word"
+            android:text="@string/about"
+            android:textSize="16sp"
+            android:padding="@dimen/margin_10dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

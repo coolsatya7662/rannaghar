@@ -1,0 +1,17 @@
+{
+  "citylist": [
+
+    {
+      "id": 1,
+      "city": "Karimpur",
+      "State": "West Bengal"
+    },
+
+    {
+      "id": 2,
+      "city": "Kolkata",
+      "State": "West Bengal"
+    }
+
+  ]
+}
