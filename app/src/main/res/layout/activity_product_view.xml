@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="?windowActionBar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.ProductViewActivity"
+    android:background="#e8e8e8">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/ranna"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="?actionBarSize"
+                android:visibility="gone"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_orangecornertrans_10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/ivCart"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:padding="6dp"
+                    android:background="@drawable/bg_orangecornertrans_10"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="MissingConstraints"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/rounded_corner_filter"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corner_filter"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/itemname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Ranna Ghar"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp" />
+
+                    <TextView
+                        android:id="@+id/itemdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ranna ghar"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/loginbutton_selector"
+                        android:textColor="#000"
+                        android:visibility="gone"
+                        android:layout_margin="10dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Size and Prices"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="10dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:textColor="#fff"
+                            android:layout_margin="10dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/txtPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CUSINES"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="North Indian, Continental"
+                                android:textColor="#333"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FEATURES"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Full bar, Wifi"
+                                android:textColor="#333"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/addtocart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add To Cart"
+                        android:layout_marginTop="40dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </FrameLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relative_cart_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent">
+    <TextView
+        android:id="@+id/cart_total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:text="Cart Total :- "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:text="View"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

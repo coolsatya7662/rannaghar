@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.plabon.rannaghar.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.plabon.rannaghar.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.plabon.rannaghar.ui.category.CategoryFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.plabon.rannaghar.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_new_product"
+        android:name="com.plabon.rannaghar.ui.fav.FavFragment"
+        android:label="@string/menu_favourite"
+        tools:layout="@layout/fragment_fav" />
+    <fragment
+        android:id="@+id/nav_offer"
+        android:name="com.plabon.rannaghar.ui.offer.OffrersFragment"
+        android:label="@string/menu_offer"
+        tools:layout="@layout/fragment_offer" />
+    <fragment
+        android:id="@+id/nav_popular_news"
+        android:name="com.plabon.rannaghar.ui.news.NewsFragment"
+        android:label="@string/menu_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.plabon.rannaghar.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.plabon.rannaghar.ui.shareapp.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.plabon.rannaghar.ui.chat.ChatFragment"
+        android:label="@string/menu_chat"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/nav_my_order"
+        android:name="com.plabon.rannaghar.ui.order.MyOrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_my_order" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.plabon.rannaghar.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
